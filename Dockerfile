@@ -1,7 +1,5 @@
 FROM node:12.18.1
 ENV NODE_ENV=production
 WORKDIR /profiler
-COPY ["package.json", "package-lock.json*", "./"]
-RUN npm install --production
-COPY . .
+RUN yarn install
 CMD [ "node", "server.js" ]
