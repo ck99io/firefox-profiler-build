@@ -1,7 +1,7 @@
 on: 
   push:
     branches: 
-      - release
+      - main
 name: Docker Image Build for Firefox Profiler and Push to Dockerhub
 
 jobs:
